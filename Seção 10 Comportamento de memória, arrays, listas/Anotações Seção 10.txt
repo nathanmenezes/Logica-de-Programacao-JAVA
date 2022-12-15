@@ -1,0 +1,63 @@
+Classe são tipos referencia
+
+variaveis cujo tipo são classe não devem ser entendidas como caixas, mas sim como tentaculos(ponteiros) para caixas
+
+Heap é uma area de memoria onde os objetos são alocados em tempo de execução
+
+Classe possui um endereço de memoria referenciando a caixa do objeto, sendo assim a ponteira para o objeto
+
+Tipos primitivos são tipos valor
+
+Em java, tipos primitivos são tipo valor. Tipos valor são caixas e não ponteiros caso uma variavel receba o valor de uma outra ela não recebe uma referencia ela recebe uma cópia do valor.
+
+Valores padrão
+
+Quando alocamos (new) qualquer tipo estruturado (classe ou array), são atribuidos valores padrão aos seus elementos
+
+numeros: 0
+boolean: false
+char: caractere codigo 0
+objeto (string): null
+
+Diferencias Class vs Tipo Primitivo
+
+Classe:
+    Vantagem: Usufrui de todos recursos O.O
+    Variavei são ponteiros
+    Objetos precisam ser instanciados usando new, ou apontar para um objeto já existente
+    Aceita valor null
+    y = x; - "y passa a apontar para onde x aponta"
+    Objetos instaciados no Heap
+    Objetos não utilizados são desalocados em um momento proximo pelo garbage collector
+
+Tipo Primitivo:
+    Vantagem: É mais simples e mais perfomático
+    Variáveis são caixas
+    Não instacia. Uma vez declarados, estão prontos para uso.
+    Não aceita valor null
+    Y = X; "y recebe uma copia de x"
+    "Objetos" instanciados no stack
+    "Objetos" são desalocados imediatamente quando seu escopo de execução é finalizado
+
+
+Garbage Collector
+    É um processo que automatiza o gerenciamento de memória de um programa em execução
+
+    O garbage collector monitora os objetos alocados dinamicamente pelo programa (no heap), desalocando aqueles que não estão sendo mais utilizados.
+
+
+Vetores
+
+    Em programação vetor é o nome dado a arranjos unidimensionais
+
+    Arranjo (array) é uma estutura de dados:
+        homogenea (dados do mesmo tipo)
+        ordenada (elementos acessados por meio de posições)
+        alocada de uma vez só, em um bloco contiguo de memoria
+
+    Vantagens
+        Acesso imediato aos elementos pela sua posição
+
+    Desvantagens
+        Tamanho fixo
+        Dificuldade para se realizar inserções e deleções 

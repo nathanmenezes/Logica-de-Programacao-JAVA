@@ -1,0 +1,57 @@
+Criação de classe 
+
+1 atributos
+2 construtores
+3 get and set
+4 metodos
+
+Construtor
+
+    É uma operação especial da classe, que no momento da instanciação do objeto ele é executado
+
+Usos Comuns:
+
+    Iniciar valores dos atributos
+    Permitir ou obrigar que o objeto receba dados / dependencias no momento de sua instanciação (injeção de dependendcia)
+
+    Se um construtor customizado não for especificado a classe disponibiliza o constutor padrão:
+    product p = new Product();
+
+É possivel especificar mais de um constutor na mesma classe (sobrecarga)
+
+Palavra this
+
+    É uma referencia para o proprio objeto
+
+Usos Comuns:
+
+    Diferenciar atributos de variaveis locais
+    Passar o propio objeto como argumento na chamada de um metodo ou contrutor
+
+Sobrecarga
+
+É um recurso que uma classe possui de oferecer mais de uma operação com o mesmo nome, porém com diferentes listas de parametros
+
+
+Encapsulamentorder
+
+    É um principio que consiste em esconder detalhes de implementação de uma classe, expondo apenas operações seguras que mantenham os objetos em um estado consistente
+
+    Regra de ouro: o objeto deve sempre estar em um estado consistente, e a propia classe deve garantir isso.
+
+Um objeto não deve expor nenhum atributo (modificador de acesso private) sendo somente acessado pelos metodos get e set.
+
+Para modificar ou acessar os atributos private, é necessario utilizar metodos get(acessar) e set(modificar). 
+
+Não é necessario criar um set para todos os atributos (olhar as regras de negocio para não comprometer o objeto)
+
+Modificadores de acesso
+
+PRIVATE - o membro só pode ser acessado na propia classe
+
+(nada) - o membro só pode ser acessado nas classe do mesmo package
+
+PROTECTED - o membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes diferentes
+
+PUBLIC - o membro é acessado por todas classes (ao menos que ele resida em um modulo diferente que não exporte pacote onde ele está)
+

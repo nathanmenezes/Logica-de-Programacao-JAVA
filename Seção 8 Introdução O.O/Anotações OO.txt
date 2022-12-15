@@ -1,0 +1,44 @@
+Classe é um tipo estruturado que pode conter:
+
+Atributos (DADOS / CAMPOS)
+Metódos (Funções / Operações)
+
+A classe também pode prover muitos outros recursos, tais como:
+• Construtores
+• Sobrecarga
+• Encapsulamento
+• Herança
+• Polimorfismo
+
+Exemplos:
+• Entidades: Produto, Cliente, Triangulo
+• Serviços: ProdutoService, ClienteService, EmailService, StorageService
+• Controladores: ProdutoController, ClienteController
+• Utilitários: Calculadora, Compactador
+• Outros (views, repositórios, gerenciadores, etc.)
+
+Classe é a definição do tipo
+
+Objeto é a classe instanciada
+
+Toda classe é uma subclasse da classe Object, ou seja todas as classe possuem metodos pré definidos:
+
+getClass - Retorna o tipo do objeto
+equals - compara se o objeto é igual o outro
+hashCode - retorna um codigo hash do objeto
+toString - Converte o objeto para string
+
+Membros Estáticos (STATIC)
+
+Também chamados de mebros de classe fazendo oposição a membros e instancia.
+
+São membros que não há necessidade de objetos para serem chamados podendo ser chamado direto pelo nome da classe.
+
+Aplicações comuns:
+
+Classes Utilitarias (Math.sqrt)
+Declaração de Constantes
+
+Uma classe que possui somente membros estáticos pode ser uma classe estatica também. Esta classe não poderá ser instanciada.
+
+
